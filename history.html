@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - Wings of Wisdom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="logo-icon me-2">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <span class="logo-text">Wings of Wisdom</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#what-is-nobel">What is Nobel Prize?</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="winners.html">Winners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-3 fw-bold">The History of Nobel Prize</h1>
+                    <p class="lead">Discover the remarkable story of Alfred Nobel and the legacy that continues to honor human achievement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <div class="modern-card scroll-animate mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4"><i class="fas fa-user-circle me-2"></i>Alfred Nobel (1833-1896)</h2>
+                    <p class="lead">Alfred Bernhard Nobel was a Swedish chemist, engineer, inventor, businessman, and philanthropist. He is best known for inventing dynamite and for establishing the Nobel Prizes through his will.</p>
+                    <p>Nobel held 355 different patents, dynamite being the most famous. His fortune was used to establish the Nobel Prizes, which continue to honor outstanding achievements in various fields.</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-medal display-1 text-warning"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nobel Prize Timeline -->
+        <div class="modern-card scroll-animate mb-5">
+            <h2 class="fw-bold mb-4"><i class="fas fa-timeline me-2"></i>Nobel Prize Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item scroll-animate" onclick="showHistoryModal('birth')">
+                    <h4 class="fw-bold text-primary">1833</h4>
+                    <p>Alfred Nobel is born in Stockholm, Sweden.</p>
+                    <small class="text-muted">Click for more details</small>
+                </div>
+                <div class="timeline-item scroll-animate" onclick="showHistoryModal('dynamite')">
+                    <h4 class="fw-bold text-warning">1867</h4>
+                    <p>Nobel invents dynamite, making him wealthy worldwide.</p>
+                    <small class="text-muted">Click for more details</small>
+                </div>
+                <div class="timeline-item scroll-animate" onclick="showHistoryModal('first')">
+                    <h4 class="fw-bold text-primary">1901</h4>
+                    <p>The first Nobel Prizes are awarded.</p>
+                    <small class="text-muted">Click for more details</small>
+                </div>
+                <div class="timeline-item scroll-animate" onclick="showHistoryModal('economics')">
+                    <h4 class="fw-bold text-secondary">1969</h4>
+                    <p>Economics Prize is established.</p>
+                    <small class="text-muted">Click for more details</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Famous Nobel Laureates -->
+        <div class="modern-card scroll-animate mb-5">
+            <h2 class="fw-bold mb-4"><i class="fas fa-star me-2"></i>Famous Nobel Laureates</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="laureate-card" onclick="showLaureateModal('einstein')">
+                        <div class="laureate-icon bg-primary">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h5>Albert Einstein</h5>
+                        <p class="text-primary">Physics 1921</p>
+                        <small class="text-muted">Photoelectric Effect</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="laureate-card" onclick="showLaureateModal('curie')">
+                        <div class="laureate-icon bg-success">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h5>Marie Curie</h5>
+                        <p class="text-success">Physics & Chemistry</p>
+                        <small class="text-muted">Radioactivity Research</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="laureate-card" onclick="showLaureateModal('mandela')">
+                        <div class="laureate-icon bg-info">
+                            <i class="fas fa-dove"></i>
+                        </div>
+                        <h5>Nelson Mandela</h5>
+                        <p class="text-info">Peace 1993</p>
+                        <small class="text-muted">Anti-Apartheid Leader</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="laureate-card" onclick="showLaureateModal('teresa')">
+                        <div class="laureate-icon bg-warning">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h5>Mother Teresa</h5>
+                        <p class="text-warning">Peace 1979</p>
+                        <small class="text-muted">Humanitarian Work</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nobel Prize Categories History -->
+        <div class="modern-card scroll-animate mb-5">
+            <h2 class="fw-bold mb-4"><i class="fas fa-history me-2"></i>Categories Through Time</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-history" onclick="showCategoryModal('physics')">
+                        <div class="category-icon bg-primary">
+                            <i class="fas fa-atom fa-2x"></i>
+                        </div>
+                        <h4>Physics</h4>
+                        <p class="text-muted">Since 1901 • 224 Prizes</p>
+                        <small>From X-rays to quantum mechanics</small>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-history" onclick="showCategoryModal('chemistry')">
+                        <div class="category-icon bg-success">
+                            <i class="fas fa-flask fa-2x"></i>
+                        </div>
+                        <h4>Chemistry</h4>
+                        <p class="text-muted">Since 1901 • 188 Prizes</p>
+                        <small>From elements to DNA structure</small>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-history" onclick="showCategoryModal('medicine')">
+                        <div class="category-icon bg-danger">
+                            <i class="fas fa-heartbeat fa-2x"></i>
+                        </div>
+                        <h4>Medicine</h4>
+                        <p class="text-muted">Since 1901 • 224 Prizes</p>
+                        <small>From antibiotics to vaccines</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="modern-card scroll-animate h-100">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-scroll fa-3x text-primary"></i>
+                    </div>
+                    <h3 class="fw-bold">Nobel's Will</h3>
+                    <p>In his will, Nobel directed that his fortune should establish prizes for those who confer the "greatest benefit to humankind" in physics, chemistry, medicine, literature, and peace.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="modern-card scroll-animate h-100">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-building fa-3x text-success"></i>
+                    </div>
+                    <h3 class="fw-bold">The Nobel Foundation</h3>
+                    <p>Established in 1900 to manage Nobel's fortune and oversee the awarding of the prizes. The Foundation ensures the prizes maintain their prestige and independence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- History Details Modal -->
+    <div class="modal fade" id="historyModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="historyModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="historyModalBody">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center mb-3"><div class="logo-icon me-2" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);"><i class="fas fa-medal"></i></div>
+                <h5 class="mb-0">Wings of Wisdom</h5></div>
+                    <p class="text-muted">Celebrating excellence in human achievement through the Nobel Prize legacy.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-decoration-none"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="faqs.html"><i class="fas fa-question-circle me-2"></i>FAQs</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-images me-2"></i>Gallery</a></li>
+                        <li><a href="nomination.html"><i class="fas fa-award me-2"></i>Nomination</a></li>
+                        <li><a href="events.html"><i class="fas fa-calendar me-2"></i>Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="winners.html?category=physics"><i class="fas fa-atom me-2"></i>Physics</a></li>
+                        <li><a href="winners.html?category=chemistry"><i class="fas fa-flask me-2"></i>Chemistry</a></li>
+                        <li><a href="winners.html?category=medicine"><i class="fas fa-heartbeat me-2"></i>Medicine</a></li>
+                        <li><a href="winners.html?category=literature"><i class="fas fa-book me-2"></i>Literature</a></li>
+                        <li><a href="winners.html?category=peace"><i class="fas fa-dove me-2"></i>Peace</a></li>
+                        <li><a href="winners.html?category=economics"><i class="fas fa-chart-line me-2"></i>Economics</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html"><i class="fas fa-info-circle me-2"></i>About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope me-2"></i>Contact</a></li>
+                        <li><a href="history.html"><i class="fas fa-history me-2"></i>History</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt me-2"></i>Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-file-contract me-2"></i>Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Wings of Wisdom. Educational project inspired by Nobel Prize Foundation.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 text-muted">Made with <i class="fas fa-heart text-danger"></i> for education</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <div class="chatbot-header ms-auto" onclick="toggleChatbot()">
+            <i class="fas fa-robot"></i>
+            
+        </div>
+        <div class="chatbot-body" id="chatbotBody">
+            <div class="chat-messages" id="chatMessages">
+                <div class="bot-message">
+                    <i class="fas fa-robot"></i>
+                    <span>Hi! I'm your Nobel Prize assistant. Ask me anything about Nobel laureates!</span>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chatInput" placeholder="Ask about Nobel Prize..." onkeypress="handleChatInput(event)">
+                <button onclick="sendMessage()" class="chat-send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</html>

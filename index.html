@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wings of Wisdom - Modern Nobel Prize Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Modern Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="logo-icon me-2">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <span class="logo-text">Wings of Wisdom</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#what-is-nobel">What is Nobel Prize?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="winners.html">Winners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold">Celebrating Excellence in Human Achievement</h1>
+                    <p class="lead mb-4">Discover the remarkable stories of Nobel Prize laureates who have shaped our world through groundbreaking discoveries and contributions to humanity.</p>
+                    <div class="d-flex gap-3">
+                        <a href="winners.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-search me-2"></i>Explore Winners
+                        </a>
+                        <a href="#what-is-nobel" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-question-circle me-2"></i>What is Nobel Prize?
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <i class="fas fa-medal display-1 text-warning opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Nobel Prize Section -->
+    <section id="what-is-nobel" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-3">What is the Nobel Prize?</h2>
+                    <p class="lead text-muted">The world's most prestigious awards recognizing outstanding achievements in human knowledge and peace</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="modern-card scroll-animate h-100" onclick="showNobelInfoModal('history')">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-history fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">The Beginning</h4>
+                        <p>Started in 1901 by Alfred Nobel, a Swedish inventor who wanted to reward those who benefit humanity the most.</p>
+                        <small class="text-muted">Click to learn more</small>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="modern-card scroll-animate h-100" onclick="showNobelInfoModal('purpose')">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-bullseye fa-3x text-success"></i>
+                        </div>
+                        <h4 class="fw-bold">The Purpose</h4>
+                        <p>To honor people who make discoveries, inventions, or contributions that greatly benefit all of humanity.</p>
+                        <small class="text-muted">Click to learn more</small>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="modern-card scroll-animate h-100" onclick="showNobelInfoModal('impact')">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-globe fa-3x text-warning"></i>
+                        </div>
+                        <h4 class="fw-bold">Global Impact</h4>
+                        <p>Nobel Prize winners have given us life-saving medicines, revolutionary technologies, and paths to peace.</p>
+                        <small class="text-muted">Click to learn more</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simple Explanation -->
+            <div class="modern-card scroll-animate">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h3 class="fw-bold mb-3">In Simple Words...</h3>
+                        <p class="lead">Think of the Nobel Prize as the "Oscar Awards" for scientists, writers, and peacemakers. Every year, the smartest people who solve big problems or make amazing discoveries get this special award.</p>
+                        <p>It's like giving a gold medal to someone who invents a cure for a disease, writes a beautiful book, or helps countries stop fighting.</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <i class="fas fa-award fa-5x text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quiz Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-6 fw-bold mb-3">🧠 Test Your Nobel Knowledge!</h2>
+                    <p class="lead">Quick quiz about Nobel Prize winners and discoveries</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="quiz-container bg-white text-dark rounded-4 p-4">
+                        <div id="quizContent">
+                            <h4 class="mb-3" id="questionText">Loading question...</h4>
+                            <div class="quiz-options" id="quizOptions">
+                                <!-- Options will be loaded here -->
+                            </div>
+                            <div class="quiz-controls mt-4">
+                                <button class="btn btn-primary" id="nextQuestion" onclick="nextQuestion()" disabled>Next Question</button>
+                                <span class="ms-3">Question <span id="currentQ">1</span> of <span id="totalQ">5</span></span>
+                            </div>
+                        </div>
+                        <div id="quizResults" class="text-center" style="display: none;">
+                            <h3 class="text-success mb-3">🎉 Quiz Complete!</h3>
+                            <p class="lead">Your Score: <span id="finalScore">0</span>/5</p>
+                            <button class="btn btn-primary" onclick="restartQuiz()">Try Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-card scroll-animate">
+                        <span class="stats-number" data-count="965">0</span>
+                        <p class="mb-0 text-muted">Total Prizes</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-card scroll-animate">
+                        <span class="stats-number" data-count="630">0</span>
+                        <p class="mb-0 text-muted">Individual Laureates</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-card scroll-animate">
+                        <span class="stats-number" data-count="60">0</span>
+                        <p class="mb-0 text-muted">Female Laureates</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats-card scroll-animate">
+                        <span class="stats-number" data-count="25">0</span>
+                        <p class="mb-0 text-muted">Organizations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-3">Nobel Prize Categories</h2>
+                    <p class="lead text-muted">Recognizing outstanding achievements across six prestigious categories</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-card categories-modren-card scroll-animate">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-atom fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">Physics</h4>
+                        <p class="text-muted">Discoveries and inventions that have conferred the greatest benefit to humankind in the field of physics.</p>
+                        <a href="winners.html?category=physics" class="btn btn-outline-primary">Explore Physics <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-card categories-modren-card scroll-animate">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-flask fa-3x text-success"></i>
+                        </div>
+                        <h4 class="fw-bold">Chemistry</h4>
+                        <p class="text-muted">Outstanding contributions to chemistry that have advanced our understanding of matter and its transformations.</p>
+                        <a href="winners.html?category=chemistry" class="btn btn-outline-success">Explore Chemistry <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-card categories-modren-card scroll-animate">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-heartbeat fa-3x text-danger"></i>
+                        </div>
+                        <h4 class="fw-bold">Medicine</h4>
+                        <p class="text-muted">Discoveries in physiology or medicine that have improved human health and saved countless lives.</p>
+                        <a href="winners.html?category=medicine" class="btn btn-outline-danger">Explore Medicine <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-card categories-modren-card scroll-animate">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-book fa-3x text-warning"></i>
+                        </div>
+                        <h4 class="fw-bold">Literature</h4>
+                        <p class="text-muted">Outstanding work in literature that has produced distinguished contributions to world culture.</p>
+                        <a href="winners.html?category=literature" class="btn btn-outline-warning">Explore Literature <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-card categories-modren-card scroll-animate">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-dove fa-3x text-info"></i>
+                        </div>
+                        <h4 class="fw-bold">Peace</h4>
+                        <p class="text-muted">Efforts to promote peace, resolve conflicts, and advance human rights around the world.</p>
+                        <a href="winners.html?category=peace" class="btn btn-outline-info">Explore Peace <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="modern-card categories-modren-card scroll-animate">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-chart-line fa-3x text-secondary"></i>
+                        </div>
+                        <h4 class="fw-bold">Economics</h4>
+                        <p class="text-muted">Contributions to economic sciences that have enhanced our understanding of economic phenomena.</p>
+                        <a href="winners.html?category=economics" class="btn btn-outline-secondary">Explore Economics <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Winners Timeline -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-3">Recent Nobel Laureates</h2>
+                    <p class="lead text-muted">Celebrating the latest achievements in human excellence</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item scroll-animate" onclick="showRecentLaureateModal('physics2024')">
+                    <h4 class="fw-bold text-primary">2024 Physics Prize</h4>
+                    <p class="text-muted mb-2"><i class="fas fa-calendar me-2"></i>October 2024</p>
+                    <p>Awarded for foundational discoveries and inventions that enable machine learning with artificial neural networks.</p>
+                    <small class="text-muted">Click for details</small>
+                </div>
+                <div class="timeline-item scroll-animate" onclick="showRecentLaureateModal('chemistry2024')">
+                    <h4 class="fw-bold text-success">2024 Chemistry Prize</h4>
+                    <p class="text-muted mb-2"><i class="fas fa-calendar me-2"></i>October 2024</p>
+                    <p>Recognized for computational protein design and protein structure prediction using AI.</p>
+                    <small class="text-muted">Click for details</small>
+                </div>
+                <div class="timeline-item scroll-animate" onclick="showRecentLaureateModal('medicine2024')">
+                    <h4 class="fw-bold text-danger">2024 Medicine Prize</h4>
+                    <p class="text-muted mb-2"><i class="fas fa-calendar me-2"></i>October 2024</p>
+                    <p>Honored for the discovery of microRNA and its role in post-transcriptional gene regulation.</p>
+                    <small class="text-muted">Click for details</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="logo-icon me-2" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h5 class="mb-0">Wings of Wisdom</h5>
+                    </div>
+                    <p class="text-muted">Celebrating excellence in human achievement through the Nobel Prize legacy.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-decoration-none"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="faqs.html"><i class="fas fa-question-circle me-2"></i>FAQs</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-images me-2"></i>Gallery</a></li>
+                        <li><a href="nomination.html"><i class="fas fa-award me-2"></i>Nomination</a></li>
+                        <li><a href="events.html"><i class="fas fa-calendar me-2"></i>Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="winners.html?category=physics"><i class="fas fa-atom me-2"></i>Physics</a></li>
+                        <li><a href="winners.html?category=chemistry"><i class="fas fa-flask me-2"></i>Chemistry</a></li>
+                        <li><a href="winners.html?category=medicine"><i class="fas fa-heartbeat me-2"></i>Medicine</a></li>
+                        <li><a href="winners.html?category=literature"><i class="fas fa-book me-2"></i>Literature</a></li>
+                        <li><a href="winners.html?category=peace"><i class="fas fa-dove me-2"></i>Peace</a></li>
+                        <li><a href="winners.html?category=economics"><i class="fas fa-chart-line me-2"></i>Economics</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html"><i class="fas fa-info-circle me-2"></i>About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope me-2"></i>Contact</a></li>
+                        <li><a href="history.html"><i class="fas fa-history me-2"></i>History</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt me-2"></i>Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-file-contract me-2"></i>Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Wings of Wisdom. Educational project inspired by Nobel Prize Foundation.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 text-muted">Made with <i class="fas fa-heart text-danger"></i> for education</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <div class="chatbot-header ms-auto" onclick="toggleChatbot()">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-body" id="chatbotBody">
+            <div class="chat-messages" id="chatMessages">
+                <div class="bot-message">
+                    <i class="fas fa-robot"></i>
+                    <span>Hi! I'm your Nobel Prize assistant. Ask me anything about Nobel laureates!</span>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chatInput" placeholder="Ask about Nobel Prize..." onkeypress="handleChatInput(event)">
+                <button onclick="sendMessage()" class="chat-send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nobel Info Modal -->
+    <div class="modal fade" id="nobelInfoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="nobelInfoModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="nobelInfoModalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
