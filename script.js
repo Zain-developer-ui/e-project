@@ -121,6 +121,18 @@ function initializeSearch() {
     }
 }
 
+function clearFilters() {
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const yearFilter = document.getElementById('yearFilter');
+    
+    if (searchInput) searchInput.value = '';
+    if (categoryFilter) categoryFilter.value = '';
+    if (yearFilter) yearFilter.value = '';
+    
+    performSearch();
+}
+
 function performSearch() {
 const searchInput = document.getElementById('searchInput');
 const categoryFilter = document.getElementById('categoryFilter');

@@ -424,8 +424,12 @@ body {
 
 /* Footer */
 .footer {
-  background: #0f172a !important;
-  color: #ffffff !important;
+  background: rgba(255,255,255,0.95) !important;
+  backdrop-filter: blur(10px);
+  color: #000000 !important;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+  padding: 3rem 0 2rem;
   padding: 4rem 0 2rem !important;
   margin-top: 4rem !important;
   display: block !important;
@@ -433,13 +437,17 @@ body {
 }
 
 .footer h5 {
-  color: #f59e0b !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1rem !important;
+  font-weight: 700;
   font-weight: 600 !important;
 }
 
 .footer a {
-  color: #cbd5e1 !important;
+  color: #374151 !important;
   text-decoration: none !important;
   transition: all 0.3s ease !important;
   display: block !important;
@@ -447,7 +455,7 @@ body {
 }
 
 .footer a:hover {
-  color: #ffffff !important;
+  color: #000000 !important;
   transform: translateX(5px) !important;
 }
 
@@ -462,7 +470,7 @@ body {
 }
 
 .footer p {
-  color: #cbd5e1 !important;
+  color: #6b7280 !important;
 }
 
 /* Remove cursor pointer from containers */
@@ -1774,4 +1782,8 @@ body {
 
 .floating-quote {
   z-index: 1020 !important;
+}
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
 }
